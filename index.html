@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>CCIAO</title>
+
+  <style>
+    @media (min-width: 576px) {}
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 992px) {}
+
+    @media (min-width: 1200px) {}
+    * {
+      overflow-x: hidden;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      height: 100% !important;
+    }
+    .card .card-image img {
+      display: block;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+    }
+    .card .card-content {
+      margin-top: 50px;
+      height: 500px;
+    }
+    .nav-wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    nav ul a {
+      font-size: 1.8rem !important;
+    }
+    .container-about {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .container-info, .container-sankofa, .container-cfc, .container-inscricao {
+      /* padding-top: 200px; */
+      height: 100vh;
+      width: 100vw;
+    }
+    .container-footer {
+      height: 30vh;
+      width: 100vw;
+    }
+    .container-info-sankofa {
+      width: 50vw;
+      padding: 80px;
+      position: absolute;
+      top: 220%
+    }
+    .container-info-cfc {
+      width: 50vw;
+      padding: 80px;
+      position: absolute;
+      top: 320%
+    }
+    .container-info-inscricao {
+      width: 30vw;
+      padding: 80px;
+      position: absolute;
+      top: 420%
+    }
+    .row-info {
+      position: absolute;
+      top: 120%;
+    }
+    .color-missao { 
+      background-color: #bfb2ae;
+    }
+    .color-visao { 
+      background-color: #d3d7cf;
+    }
+    .color-valores { 
+      background-color: #babdb6;
+    }
+    .color-sankofa {
+      background-color: #eeeeec;
+    }
+    .blue-nav {
+      background-color: #0e232e;
+    }
+    .text-container-info {
+      font-size: 1.5rem;
+    }
+    .img-container-info {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .img-container-about {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+    .img-container-sankofa {
+      position: absolute;
+      height: 100vh;
+      width: 50vw;
+      object-fit: cover;
+    }
+    .img-container-inscricao {
+      position: absolute;
+      height: 100vh;
+      width: 70vw;
+      object-fit: cover;
+    }
+    .iframe-container-cfc {
+      position: absolute;
+      top: 335%;
+      left: 8%;
+    }
+    .marca-container-sankofa, .marca-container-cfc {
+      margin: 0 auto;
+      width: 600px;
+      display: block;
+      padding-bottom: 5vh;
+    }
+    .marca-footer {
+      margin: 0 auto;
+      width: 400px;
+      display: block;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+    }
+    .marca-container-inscricao {
+      margin: 0 auto;
+      width: 400px;
+      display: block;
+      padding-bottom: 5vh;
+    }
+    .text-about {
+      text-align: right;
+      position: absolute;
+      top: 45%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+    }
+    .title-light {
+      display: block;
+      font-weight: 200;
+      font-size: 8rem;
+    }
+    .title-bold {
+      font-weight: 900;
+      font-size: 8rem;
+    }
+    .text-about {
+      font-size: 2rem;
+    }
+    .text-sankofa, .text-cfc {
+      font-size: 2rem;
+    }
+    .text-inscricao {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .text-footer {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .text-cfc {
+      text-align: right;
+    }
+    .row .col.l2 {
+      padding: 0;
+    }
+    .row .col.m2 {
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper blue-nav">
+        <a href="#container-about" class="brand-logo">
+          <img src="assets/svg/marca_cciao.svg" alt="" srcset="">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#container-info">Quem Somos</a></li>
+          <li><a href="#container-sankofa">Projeto Sankofa</a></li>
+          <li><a href="#container-cfc">CFC CCIAO</a></li>
+          <li><a href="#container-inscricao">Inscrições CFC</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Container sobre -->
+  <div id="container-about" class="row scrollspy">
+    <div class="container-about">
+      <img class="img-container-about" src="assets/img/foto_capa.jpg" alt="" srcset="">
+      <div class="text-about">
+        <span class="title-light">Cidadania</span>
+        <span class="title-bold">para todos</span>
+        <p class="title-body">
+          Lutar por Cidadania para Todos é um dos princípios fundamentais da Casa de Cultura Ilê Asé d'Osoguiã. Uma longa
+          resistência do povo negro no período da pós-abolição, principalmente no que tange as lutas contra o Racismo
+          Institucional e a Intolerância Religiosa. Acreditamos que o caminho a seguir é o educacional. Com isso, investigamos
+          coletivamente a História e a Cultura Afro-brasileira e Africana, analisamos o avançar da cidadania negra no Brasil na
+          pós-abolição e, por meio de Cursos de Formação Continuada assentados num referencial teórico-metodológico Pretagógico,
+          construímos, junto com nossos beneficiários, produtos didático-pedagógicos capazes de levar uma educação antirracista
+          para um número cada vez maior de pessoas comprometidas com a causa.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Container valores -->
+  <div id="container-info" class="container-info scrollspy">
+    <div class="row row-info" style="margin: 0 auto;">
+      <div class="col l2 m2 s12 offset-l3 offset-m3">
+        <div class="card z-depth-0">
+          <div class="card-image">
+            <img src="assets/svg/missao.svg">
+          </div>
+          <div class="color-missao card-content">
+            <p class="text-container-info center">
+              Promover a humanização, socialização e integração dos povos, com destaque para os Povos de Comunidades Tradicionais,
+              através de processos de Formação Continuada voltado para a Educação para as Relações Étnico-raciais.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l2 m2 s12">
+        <div class="card z-depth-0">
+          <div class="card-image">
+            <img src="assets/svg/visao.svg">
+          </div>
+          <div class="color-visao card-content">
+            <p class="text-container-info center">
+              A partir dos cursos de Formação Continuada oferecidos pela Casa de Cultura IAO, ampliar as discussões sobre práticas
+              educativas antirracistas para além dos Projetos desenvolvidos pela instituição, ao oferecer suas práticas e suas
+              experiências a outras instituições, e ajudar o país a consolidar uma educação inclusiva e equânime.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l2 m2 s12">
+        <div class="card z-depth-0">
+          <div class="card-image">
+            <img src="assets/svg/valor.svg">
+          </div>
+          <div class="color-valores card-content">
+            <p class="text-container-info center">
+              Trabalhar a Educação Antirracista, a partir da Cosmogonia Africana, dos Valores Civilizatórios Afro-brasileiros, para
+              fortalecer a Ancestralidade, os Direitos Humanos, a Educação para as Relações Étnico-raciais, a diversidade, a equidade
+              e a Identidade Etnica-racial de crianças, adolescentes, jovens e adultos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container projeto sankofa -->
+  <div id="container-sankofa" class="container-sankofa color-sankofa scrollspy">
+    <div class="row">
+      <div class="col l6 m6 s12">
+        <div class="container-info-sankofa">
+          <img class="marca-container-sankofa" src="assets/svg/marca_sankofa.svg" alt="">
+          <p class="text-sankofa">
+            O Projeto Sankofa vem sendo desenvolvido pela Casa de Cultura IAO desde de 2020. Nesse período, foram desenvolvidos
+            cursos de formação teórico-metodológicas com jovens e adultos e oficinas didático-pedagógicas lúdicas com crianças e
+            adolescentes. A experiência construída levou a desenvolver o Projeto tanto com o patrocínio do FMDCA/CMDCA/PMJP, quanto
+            da Rede Globo/UNESCO. Suas ações pedagógicas estão fundadas na interdisciplinaridade, no planejamento por meio de
+            sequências didáticas, nos Temas Geradores Bimestrais e nos Ciclos de Conteúdos. Esses processos de ensino e aprendizado
+            têm levado a Instituição a criar um conjunto de instrumentos didáticos voltados para a consolidação de práticas
+            educativas antirracistas
+          </p>
+        </div>
+      </div>
+      <div class="col l6 m6 s12">
+        <img class="img-container-sankofa" src="assets/img/foto_projeto.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Container cfc -->
+  <div id="container-cfc" class="container-cfc color-valores scrollspy">
+    <div class="row">
+      <div class="col l6 m6 s12">
+        <iframe class="iframe-container-cfc" src="https://drive.google.com/file/d/1QGK9H2AxcAoaGjqyYRgPU1y8ZfIz3I6G/preview" width="840" height="472"
+          allow="autoplay">
+        </iframe>
+      </div>
+      <div class="col l6 m6 s12">
+        <div class="container-info-cfc">
+          <img class="marca-container-cfc" src="assets/svg/marca_cfc.svg" alt="">
+          <p class="text-cfc">
+            Os Cursos de Formação Continuada Sankofa tem como estratégia de atuação apoiar a capacitação de gestores, agentes e
+            técnicos públicos e privados, bem como apoiar a construção e a consolidação de uma rede de apoio à promoção da
+            diversidade e da equidade racial no âmbito das relações pessoais e institucionais públicas e privadas, por meio da
+            Educação Antirracista. Ao longo dos últimos 4 anos, a Casa de Cultura IAO desenvolveu uma Cartilha, um PCRIIR (Plano de
+            Combate ao Racismo Institucional e a Intolerância Religiosa), e 50 vídeos de 30” cada sobre a “História e a Cultura
+            Afro-brasileira e Africana”, voltados para desenvolver Estratégias de Enfrentamento ao Racismo Institucional e a
+            Intolerância Religiosa. Com esses produtos educacionais, foi criado o Programa de Formação Pretagógica Sankofa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container inscricao -->
+  <div id="container-inscricao" class="container-inscricao scrollspy">
+    <div class="row">
+      <div class="col l4 m4 s12">
+        <div class="container-info-inscricao center-align">
+          <img class="marca-container-inscricao" src="assets/svg/marca_cfc.svg" alt="">
+          <p class="text-inscricao" style="padding-bottom: 30px;">
+            O "Projeto Pretagogia - Fortalecendo a Cultura de Paz", tem como base os valores da cosmovisão africana, inseridos no
+            mapa dos valores civilizatórios afro-brasileiro: a ancestralidade, a tradição oral, o corpo enquanto fonte espiritual e
+            produtor de saberes, a valorização da natureza, a religiosidade, a noção de território e territorialidade, o princípio
+            da circularidade e afrocêntrica.
+            Através dele, a Casa de Cultura IAO realizá o "III Curso de Formação Continuada para o Enfrentamento ao Racismo
+            Institucional e a Intolerância Religiosa", intitulado "Pretagogia e a Cultura da Paz". Voltado para Gestores e Agentes
+            Públicos e Privados, Profissionais das areas da educação, saúde, assistência social, justiça e que compõem a rede de
+            proteção à criança e ao adolescente, o curso tem como perspectiva, formar multiplicadores que debatam e proponham
+            políticas públicas e estratégias para o enfrentamento ao racismo.
+          </p>
+          <a class="waves-effect waves-light btn-large red darken-4" target="_blank" href="https://forms.gle/jqtjaMk1y77GpPEk8">Faça agora sua Inscrição</a>
+        </div>
+      </div>
+      <div class="col l8 m8 s12">
+        <img class="img-container-inscricao" src="assets/img/foto_form.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="page-footer grey lighten-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 s12">
+        <img class="marca-footer" src="assets/svg/marca_footer.svg" alt="" width="300vw">
+        <p class="text-footer black-text">Casa de Cultura Ilê Asé D'Osoguiã – CCIAO foi fundada em 20 de Janeiro de 2007, como instrumento de fortalecimento da
+        diminuição das desigualdades sociais entre brancos e negros, como representantes de Povos e Comunidades Tradicionais de
+        Matriz Africana no Brasil, desde 25/05/1998, realizamos projetos e ações com atividades integralizadas e articuladas,
+        visando o respeito a diversidade cultural e a cosmogonia africana.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <span class="black-text">
+        © 2023 ONIX Tecnologia | Victor Affonso Leal
+      </span>
+    </div>
+  </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('.scrollspy').scrollSpy({
+          throttle: 20,
+          scrollOffset: 50 
+        });
+      });
+  </script>
+</body>
+</html>
